@@ -1,5 +1,6 @@
 const map = document.getElementById("map");
 const cards = document.getElementById("cards");
+const searchInput = document.getElementById('po-search');
 
 window.addEventListener("load", loadData);
 
@@ -48,10 +49,12 @@ async function numberOfPincodes(pincode) {
   const endpoint = `https://api.postalpincode.in/pincode/${pincode}`;
   const response = await fetch(endpoint);
   const result = await response.json();
+  poData = result[0].PostOffice;
   return result;
 }
 
 function renderCards(data) {
+    cards.innerHTML ='';
   data.forEach((element) => {
     let card = document.createElement("div");
     card.className = "card";
@@ -104,3 +107,15 @@ function fillInfo(result) {
   });
 }
 
+searchInput.addEventListener("keyup" , (event)=>{
+    const searchText=searchInput.value.toLowerCase();
+    filterPO(searchText,poData);
+})
+
+function filterPO(searchText,poData){
+    const filterData=poData.filter(element => {
+        return element.Name.toLowerCase().includes(searchText);
+    })
+
+    renderCards(filterData)
+}
