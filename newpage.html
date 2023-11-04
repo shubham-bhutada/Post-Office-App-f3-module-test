@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more info</title>
+    <link rel="stylesheet" href="./newpagestyle.css">
+</head>
+<body>
+    <div id="header">
+      <h3>IP Address: <span id="ip"></span></h3>
+      <section id="more-info">
+        <div>
+          <p>Lat: <span id="lat"></span></p>
+          <p>Long: <span id="long"></span></p>
+        </div>
+        <div>
+            <p>City: <span id="city"></span></p>
+            <p>Region: <span id="region"></span></p>
+        </div>
+        <div>
+            <p>Organization: <span id="org"></span></p>
+            <p>Hostname: <span id="host"></span></p>
+        </div>
+      </section>
+    </div>
+    <div class="map-container">
+        <h2>Your Current Location</h2>
+        <div id="map"></div>
+    </div>
+    <div class="info">
+        <h2>More Information About You</h2>
+        <div>
+            <p>Time Zone: <span id="time-zone"></span></p>
+            <p>Date and Time: <span id="dateAndTime"></span></p>
+            <p>Pincode: <span id="pincode"></span></p>
+            <p>Message: Number of pincode(s) found: <span id="pincodes"></span></p>
+        </div>
+    </div>
+    <div class="nearby-po">
+        <h2>Post Offices Near You</h2>
+        <div class="rendercard" id="cards">
+            <!-- <div id="card">
+                <p>Name</p>
+                <p>Branch type</p>
+                <p>Delivery Status</p>
+                <p>District</p>
+                <p>division</p>
+            </div> -->
+        </div>
+    </div>
+    <script src="./newpagescript.js"></script>
+</body>
+</html>

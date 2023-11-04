@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+}
+#header {
+  width: 90vw;
+  margin: auto;
+  padding: 5vw 1vw;
+  box-sizing: border-box;
+}
+#header h3 {
+  width: 100%;
+  /* background-color: bisque; */
+  color: rgba(184, 188, 204, 0.5);
+  font-family: Inter;
+  font-size: 2vw;
+  font-weight: 700;
+}
+#more-info div p,
+#header p,
+.info div p {
+  color: rgba(184, 188, 204, 0.5);
+  font-family: Inter;
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 1vw 0;
+}
+#more-info div p span,
+.info div p span,
+#ip {
+  color: white;
+  font-family: Inter;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+#more-info {
+  padding: 3vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#more-info div {
+  width: 35%;
+}
+
+.map-container {
+  width: 100vw;
+  height: 45vw;
+  background: #575a85;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+.map-container h2,
+.info h2,
+.nearby-po h2 {
+  color: #b8bccc;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+#map {
+  /* background-color: red; */
+  width: 90%;
+  height: 80%;
+  margin: auto;
+}
+
+.info,
+.nearby-po {
+  width: 90vw;
+  padding: 4vw 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+.card {
+  border-radius: 0.5vw;
+  background: #575a85;
+  width: 90%;
+  height: fit-content;
+  padding: 2vw;
+
+}
+.card p {
+  color: #b8bccc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+
+.rendercard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    padding-top: 2vw;
+}
